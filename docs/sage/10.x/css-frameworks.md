@@ -16,12 +16,18 @@ Remove the `@roots/bud-tailwindcss` extension:
 yarn remove @roots/bud-tailwindcss
 ```
 
-### 2) Remove Tailwind linting from from `.stylelintrc`
+### 2) Change Tailwind linting to SASS linting in `.stylelintrc`
 
-Open `.stylelintrc` and **delete** the following line:
+Open `.stylelintrc` and **change** the following line:
 
 ```json
     "@roots/bud-tailwindcss/stylelint-config"
+```
+
+to
+
+```json
+    "@roots/bud-sass/stylelint-config"
 ```
 
 ### 3) Remove Tailwind from your CSS entry-point
